@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Christian | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <!-- Icons and Custom Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SYSTEM MATRIX BACKGROUND ENGINE -->
+<div id="matrix-bg-container">
+  <div class="blueprint-grid-overlay"></div>
+  <canvas id="matrix-data-canvas"></canvas>
+</div>
+  
+
+<!-- =========================================================================
+     1. NAVIGATION BAR (FIXED SIDEBAR)
+     ========================================================================= -->
+<nav class="sidebar">
+  <h2 class="logo">&lt;CJ/&gt;</h2>
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <!-- This bar glides under links on hover -->
+    <span class="nav-tracker"></span>
+  </ul>
+</nav>
+
+<!-- MAIN CONTENT WRAPPER -->
+<main class="main-content">
+
+  <!-- =========================================================================
+       2. HERO SECTION (WELCOME SCREEN)
+       ========================================================================= -->
+  <header id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text-box">
+      <h1>CJ MANGASEP</h1>
+      <h2>Computer Engineer</h2>
+      <p>Specializing in Modern Software and Hardware Architecture.</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/Sijeeeee" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/christian-james-mangasep-6142463a6/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/Sijeee.Mangasep" target="_blank" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. ABOUT SECTION (THE OS WINDOW)
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="os-window-card">
+      
+      <!-- Top Decorative Window Frame Bar -->
+      <div class="window-top-bar">
+        <span class="window-title">//SEC_02 ABOUT ME</span>
+        <div class="window-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Main Workspace Container (Where all your tab content is rendered) -->
+      <div class="window-workspace">
+          
+        <!-- PANE 1: PROFILE BIO (Default tab visible on page load) -->
+        <div class="tab-pane active" id="pane-profile">
+          <!-- Common Top Heading Row -->
+          <div class="pane-heading">
+            <h3 class="title-text">ABOUT \ PROFILE</h3>
+            <p class="subtitle-code">// CORE_SYSTEM_OVERVIEW</p>
+          </div>
+          
+          <!-- Side-by-Side Flex Layout Container -->
+          <div class="pane-body-split">
+            <div class="left-text-block">
+            <p>I am <strong>Christian James F. Mangasep</strong>, a Computer Engineering graduate driven by end-to-end technical execution. My background bridges the gap between high-level software ecosystems and low-level hardware architecture, giving me a unique full-stack perspective on how systems execute from the application layer down to the silicon.</p>
+
+<p>Whether developing responsive web applications, configuring embedded systems, or designing scalable digital infrastructure, I focus on writing clean, optimized code. I thrive on cross-functional technical challenges and adapt rapidly to new stacks to build efficient, real-world engineering solutions.</p> 
+            </div>
+            
+            <!-- Right Meta Column Box -->
+            <div class="right-meta-block">
+              <div class="avatar-circle">
+                <img src="about-section/profile/profile.png" alt="CJ Mangasep">
+              </div>
+              <div class="meta-data-list">
+                <p><strong>STATUS:</strong> ACTIVE</p>
+                <p><strong>DEPT:</strong> COMPUTER_ENGR</p>
+                <p><strong>LOC:</strong> NORTH_CALOOCAN, PH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 2: EXPERIENCE TAB -->
+        <div class="tab-pane" id="pane-experience">
+          <!-- Common Top Heading Row -->
+          <div class="pane-heading">
+            <h3 class="title-text">ABOUT \ EXPERIENCE</h3>
+            <p class="subtitle-code">// Compiling professional milestones and structural builds...</p>
+          </div>
+
+          <!-- Side-by-Side Flex Layout Container -->
+          <div class="pane-body-split">
+            <!-- Left Side Element: Mock Terminal Shell -->
+            <div class="left-media-block">
+              <div class="mock-terminal">
+                <div class="terminal-top">
+                  <span class="t-dot red"></span>
+                  <span class="t-dot yellow"></span>
+                  <span class="t-dot green"></span>
+                  <span class="t-name">NOC_MONITOR.SH</span>
+                </div>
+                <div class="terminal-body">
+                  <p><span class="cyan">&gt;</span> initialize --net-ops</p>
+                  <p class="red">[ERROR] CONNECTION FAILURE. TRYING AGAIN</p>
+                  <p class="green">[OK] CONNECTED TO MAGELLAN_SERVER</p>
+                  <p>PING 127.0.0.1 ... 1ms</p>
+                  <p>PING 127.0.0.1 ... 16ms</p>
+                  <p>PING 127.0.0.1 ... 67ms</p>
+                  <p>STATUS: <span class="cyan pulse-animation">ACTIVE_MONITORING</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side Element: The Job Experience Card Details -->
+            <div class="right-text-block">
+              <div class="experience-card">
+                <h4 class="job-role-title">Network Operations Center (NOC) Intern / OJT</h4>
+                <p class="job-meta-details">Magellan Solutions Inc. (Sept 2025 - Dec 2025)</p>
+                <ul class="bullet-points">
+                  <li><strong>Technical Support:</strong> Provided technical support for hardware, software, and network infrastructure.</li>
+                  <li><strong>Systems Troubleshooting:</strong> Installed, diagnosed, and maintained computer hardware, printer systems, and office IT deployment setups.</li>
+                  <li><strong>Team Collaboration:</strong> Partnered across IT engineering pipelines to escalate issues and optimize overall system workflow reliability.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 3: EDUCATION TAB -->
+        <div class="tab-pane" id="pane-education">
+          <div class="pane-heading">
+            <h3 class="title-text">ABOUT \ EDUCATION</h3>
+            <p class="subtitle-code">// Academic credentials and verification nodes online...</p>
+          </div>
+
+          <div class="pane-body-split">
+            <!-- Left Side (Exactly 50%): Centered Photo Frame -->
+            <div class="education-left-column">
+              <div class="education-photo-frame">
+                <div class="blurred-bg" style="background-image: url('about-section/education/educ.jpg');"></div>
+                <img class="foreground-img" src="about-section/education/educ.jpg" alt="Christian James F. Mangasep Academic Excellence Award">
+              </div>
+            </div>
+
+            <!-- Right Side (Exactly 50%): Timeline & Bullet Points -->
+            <div class="education-right-column">
+              <div class="education-timeline">
+                
+                <div class="timeline-item main-node">
+                  <div class="timeline-dot"></div>
+                  <h4 class="school-title">De La Salle Araneta University</h4>
+                  <p class="school-meta">Bachelor of Science in Computer Engineering | 2022 - 2026</p>
+                  <ul class="bullet-points">
+                    <li>Multi-term <strong>Dean's List</strong> awardee (with Honors and High Honors).</li>
+                  </ul>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h4 class="school-title">Mystical Rose School of Caloocan</h4>
+                  <p class="school-meta">STEM Strand Academic Track | 2020 - 2022</p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h4 class="school-title">Sampaguita High School</h4>
+                  <p class="school-meta">Junior High School | 2016 - 2020</p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h4 class="school-title">Congress Elementary School</h4>
+                  <p class="school-meta">Primary Education | 2010 - 2016</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 4: HOBBIES TAB -->
+        <div class="tab-pane" id="pane-hobbies">
+          <div class="pane-heading">
+            <h3 class="title-text">ABOUT \ HOBBIES</h3>
+            <p class="subtitle-code">// Accessing core personal directories and lifestyle modules...</p>
+          </div>
+
+          <div class="pane-body-split">
+            <!-- Left Side: Interactive Selector Deck -->
+            <div class="hobbies-selector-deck">
+              <div class="selector-title">// SYS_DRIVERS</div>
+              
+              <button class="hobby-driver active" onclick="switchHobby('motorcycle', this)">
+                <span class="driver-status">ONLINE</span>
+                <span class="driver-name">DRV_MOTORCYCLE</span>
+              </button>
+
+              <button class="hobby-driver" onclick="switchHobby('guitar', this)">
+                <span class="driver-status">ONLINE</span>
+                <span class="driver-name">DRV_GUITAR</span>
+              </button>
+
+              <button class="hobby-driver" onclick="switchHobby('piano', this)">
+                <span class="driver-status">ONLINE</span>
+                <span class="driver-name">DRV_PIANO</span>
+              </button>
+
+              <button class="hobby-driver" onclick="switchHobby('basketball', this)">
+                <span class="driver-status">ONLINE</span>
+                <span class="driver-name">ENG_BASKETBALL</span>
+              </button>
+
+              <button class="hobby-driver" onclick="switchHobby('billiards', this)">
+                <span class="driver-status">ONLINE</span>
+                <span class="driver-name">ENG_BILLIARDS</span>
+              </button>
+            </div>
+
+            <!-- Right Side: Active Media & Detail Frame -->
+            <div class="hobbies-display-panel">
+              <div class="display-frame">
+                <div id="hobby-blur-bg" class="blurred-bg" style="background-image: url('about-section/hobbies/motorcycle.jpg');"></div>
+                <img id="hobby-active-img" src="about-section/hobbies/motorcycle.jpg" alt="Motorcycle Mode">
+              </div>
+              
+              <div class="display-details">
+                <h4 id="hobby-title" class="hobby-title">MOTORCYCLE </h4>
+                <p id="hobby-desc" class="hobby-desc">Cruising open lanes and exploring technical mechanics. There is nothing like the engineering appreciation and focus that comes from riding and maintaining a machine on two wheels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Tab Navigation Buttons Area -->
+      <div class="window-footer-tabs">
+        <button class="tab-btn active" data-target="profile">PROFILE</button>
+        <button class="tab-btn" data-target="experience">EXPERIENCE</button>
+        <button class="tab-btn" data-target="education">EDUCATION</button>
+        <button class="tab-btn" data-target="hobbies">HOBBIES</button>
+      </div>
+
+    </div>
+  </section>
+
+<!-- =========================================================================
+     //SEC_03 SKILLS SECTION
+     ========================================================================= -->
+<section id="skills" class="generic-section">
+  <!-- Main OS Window Card -->
+  <div class="os-window-card-skills">
+    
+    <!-- Window Top Header Bar -->
+    <div class="window-top-bar">
+      <div class="window-title">//SEC_03: SKILLS_DIAGNOSTICS_OS</div>
+      <div class="window-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <!-- The Workspace Split: Explorer Sidebar + Active Report Screen -->
+    <div class="window-workspace pane-body-split">
+      
+      <!-- LEFT SIDE: File Explorer Directory Tree -->
+      <div class="skills-explorer-column">
+        <div class="explorer-header">WORKSPACE EXPLORER</div>
+        
+        <ul class="directory-tree">
+          <!-- Folder 1: Core Languages -->
+          <li class="folder-node active" data-target="core">
+            <span class="folder-icon">📂</span> prog_languages
+          </li>
+          
+          <!-- Folder 2: Embedded Systems -->
+          <li class="folder-node" data-target="embedded">
+            <span class="folder-icon">📂</span> embedded_systems
+          </li>
+          
+          <!-- Folder 3: Spatial Design -->
+          <li class="folder-node" data-target="spatial">
+            <span class="folder-icon">📂</span> 3D_design
+          </li>
+          
+          <!-- Folder 4: Secondary Stack -->
+          <li class="folder-node" data-target="aux">
+            <span class="folder-icon">📂</span> auxiliary_dependencies
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT SIDE: System Spec Sheet / Report Screen -->
+      <div class="skills-report-column">
+        <div class="report-header">
+          <span class="cyan">system_diagnostics.log</span> 
+          <span class="pulse-animation active-tag">[ ONLINE ]</span>
+        </div>
+        
+        <div class="report-display-box" id="skills-report-display">
+          <!-- Default loaded content (Core Languages) -->
+          <div class="report-content">
+            <p class="report-meta">>> INITIATING CORE_LOGIC INVENTORY...</p>
+            <div class="ascii-report-line">
+              <span class="tech-name">C / C++</span>
+              <span class="ascii-bar">[████████░░]</span>
+              <span class="tech-status green">ADVANCED // ACTIVE</span>
+            </div>
+            <div class="ascii-report-line">
+              <span class="tech-name">C#</span>
+              <span class="ascii-bar">[██████░░░░]</span>
+              <span class="tech-status green">STABLE // ACTIVE</span>
+            </div>
+            <div class="ascii-report-line">
+              <span class="tech-name">JavaScript</span>
+              <span class="ascii-bar">[██████░░░░]</span>
+              <span class="tech-status green">STABLE // ACTIVE</span>
+            </div>
+            <div class="ascii-report-line">
+              <span class="tech-name">Assembly</span>
+              <span class="ascii-bar">[████░░░░░░]</span>
+              <span class="tech-status green">CORE // DEPLOYED</span>
+            </div>
+            <div class="ascii-report-line">
+              <span class="tech-name">HTML5 / CSS3</span>
+              <span class="ascii-bar">[████████░░]</span>
+              <span class="tech-status green">STABLE // ACTIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     sec_04: PROJECTS 
+     ========================================== -->
+<section id="projects" class="console-window">
+  <!-- Retro OS Window Title Bar -->
+  <div class="console-header">
+    <div class="console-header-left">
+      <span class="console-title">// sec_04: PROJECTS</span>
+    </div>
+    <div class="console-header-right">
+      <span class="console-dot"></span>
+      <span class="console-dot"></span>
+      <span class="console-dot"></span>
+    </div>
+  </div>
+
+  <!-- Main Workspace -->
+  <div class="console-body">
+    
+    <!-- Compact Git Control Bar -->
+    <div class="git-control-bar">
+      <div class="git-branch">
+        <span class="git-branch-icon">⑂</span>
+        <span class="branch-label">branch: <strong class="white-text">main</strong></span>
+      </div>
+      
+      <div class="commit-controls">
+        <!-- UPDATE THIS LINE IN YOUR HTML (Just added id="commit-status") -->
+<span class="commit-status" id="commit-status">COMMIT 1 OF 4</span>
+        <button class="commit-btn" onclick="prevCommit()">[&lt;]</button>
+        <button class="commit-btn" onclick="nextCommit()">[&gt;]</button>
+      </div>
+    </div>
+
+    <!-- Main Side-by-Side Content Grid -->
+    <div class="github-project-card">
+      
+      <!-- Left: Compact Hardware Viewport -->
+      <div class="project-viewport">
+  <!-- Blurred Background Layer -->
+  <img id="project-bg-blur" src="projects-section/rfid.jpg" alt="" class="project-bg-blur">
+  
+  <!-- Crisp Foreground Fitted Image -->
+  <img id="project-img" src="projects-section/rfid.jpg" alt="Active Prototype" class="project-img">
+</div>
+
+      <!-- Right: Compact Floating Repository Card -->
+      <div class="project-floating-pane">
+        
+        <div class="repo-header">
+          <div class="repo-title-wrapper">
+            <span class="repo-folder-icon">📁</span>
+            <span id="repo-title" class="repo-name">automated-toll-gate-system</span>
+          </div>
+          <span class="repo-badge">Public</span>
+        </div>
+
+        <p id="repo-desc" class="repo-description">
+          An automated hardware-software prototype designed to streamline vehicle access control through secure physical and digital verification. This system implements real-time RFID tag authentication via SPI communication protocols, utilizing optimized microcontroller logic for low-latency sensor responsiveness. It features continuous servo motor tracking and precise calibration routines to ensure smooth, automated barrier gate deployment upon successful credentials verification.
+        </p>
+
+        <!-- GitHub Tech Footer Row -->
+        <div class="repo-footer">
+          <div class="footer-left">
+            <span class="lang-dot cpp"></span>
+            <span id="repo-lang" class="repo-lang-text">C++ (Arduino)</span>
+          </div>
+          <div class="footer-right">
+            <span id="tech-tag-1" class="tech-tag">★ RC522 SPI</span>
+            <span id="tech-tag-2" class="tech-tag">⑂ SG90 Servo</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ==========================================
+     sec_05: CONTACT_UPLINK (REORDERED MATRIX)
+     ========================================== -->
+<section id="contact" class="console-window">
+  <div class="console-header">
+    <div class="console-header-left">
+      <span class="console-title">// sec_05: CONTACT_UPLINK</span>
+    </div>
+    <div class="console-header-right">
+      <span class="console-dot"></span>
+      <span class="console-dot"></span>
+      <span class="console-dot"></span>
+    </div>
+  </div>
+
+  <div class="console-body">
+    <div class="contact-grid">
+      
+      <!-- Left Column: Tactical Comms Grid -->
+      <div class="comms-matrix">
+        <div class="matrix-header">
+          <span class="matrix-title">TARGET_NODES</span>
+          <span class="matrix-subtitle">CLICK TO INITIALIZE DIRECT STREAM</span>
+        </div>
+
+        <div class="node-grid">
+          <!-- Row 1: Email & GitHub -->
+          <a href="mangasep.christianjames@gmail.com" class="node-token" onclick="flashToken(this)">
+            <span class="node-tag">COMMS / 01</span>
+            <div class="node-main">
+              <span class="node-icon">✉</span>
+              <span class="node-name">EMAIL</span>
+            </div>
+            <span class="node-meta">READY</span>
+          </a>
+
+          <a href="https://github.com/Sijeeeee" target="_blank" class="node-token" onclick="flashToken(this)">
+            <span class="node-tag">REPO / 02</span>
+            <div class="node-main">
+              <span class="node-icon">📁</span>
+              <span class="node-name">GITHUB</span>
+            </div>
+            <span class="node-meta">ACTIVE</span>
+          </a>
+
+          <!-- Row 2: LinkedIn & Indeed -->
+          <a href="https://www.linkedin.com/in/christian-james-mangasep-6142463a6/" target="_blank" class="node-token" onclick="flashToken(this)">
+            <span class="node-tag">NETW / 03</span>
+            <div class="node-main">
+              <span class="node-icon">⑂</span>
+              <span class="node-name">LINKEDIN</span>
+            </div>
+            <span class="node-meta">ONLINE</span>
+          </a>
+
+          <a href="https://ph.jobstreet.com/profiles/christianjames-mangasep-GFsG7GzPfb" target="_blank" class="node-token" onclick="flashToken(this)">
+            <span class="node-tag">RECRUIT / 04</span>
+            <div class="node-main">
+              <span class="node-icon">💼</span>
+              <span class="node-name">JOBSTREET</span>
+            </div>
+            <span class="node-meta">STABLE</span>
+          </a>
+
+          <!-- Row 3: Facebook & Instagram -->
+          <a href="https://www.facebook.com/Sijeee.Mangasep" target="_blank" class="node-token" onclick="flashToken(this)">
+            <span class="node-tag">SOC_EXT / 05</span>
+            <div class="node-main">
+              <span class="node-icon">🌐</span>
+              <span class="node-name">FACEBOOK</span>
+            </div>
+            <span class="node-meta">STABLE</span>
+          </a>
+
+          <a href="https://www.instagram.com/sijeeman/" target="_blank" class="node-token" onclick="flashToken(this)">
+            <span class="node-tag">SOC_EXT / 06</span>
+            <div class="node-main">
+              <span class="node-icon">📸</span>
+              <span class="node-name">INSTAGRAM</span>
+            </div>
+            <span class="node-meta">STABLE</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Live Diagnostic Radar -->
+      <div class="project-floating-pane telemetry-pane">
+        <div class="pane-header">
+          <span class="pane-title">UPLINK_DIAGNOSTICS.sh</span>
+          <span class="pane-badge pulsing-badge">LIVE_FEED</span>
+        </div>
+
+        <div class="telemetry-display">
+          <div class="radar-box">
+            <div class="radar-sweep"></div>
+            <div class="radar-ring r1"></div>
+            <div class="radar-ring r2"></div>
+            <div class="radar-ring r3"></div>
+            <div class="radar-crosshair-h"></div>
+            <div class="radar-crosshair-v"></div>
+            <div class="radar-ping blink-fast"></div>
+          </div>
+
+          <div class="telemetry-stats">
+            <div class="tel-row"><span class="tel-key">PING:</span> <span class="tel-val cyan-txt">12ms</span></div>
+            <div class="tel-row"><span class="tel-key">SYS_LOC:</span> <span class="tel-val">Manila, PH</span></div>
+            <div class="tel-row"><span class="tel-key">TIMESTAMP:</span> <span class="tel-val string-txt" id="tel-clock">00:00:00 PM</span></div>
+            <div class="tel-row"><span class="tel-key">STATUS:</span> <span class="tel-val pulse-green">AVAIL_FOR_DEV</span></div>
+          </div>
+        </div>
+
+        <div class="matrix-wave">
+          <div class="wave-bar b1"></div>
+          <div class="wave-bar b2"></div>
+          <div class="wave-bar b3"></div>
+          <div class="wave-bar b4"></div>
+          <div class="wave-bar b5"></div>
+          <div class="wave-bar b6"></div>
+          <div class="wave-bar b7"></div>
+          <div class="wave-bar b8"></div>
+          <div class="wave-bar b9"></div>
+          <div class="wave-bar b10"></div>
+          <div class="wave-bar b11"></div>
+          <div class="wave-bar b12"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="terminal-footer">
+  <div>
+    <span class="status-green">SYS_STATUS: ONLINE</span>
+    <span style="color: rgba(255,255,255,0.2); margin: 0 8px;">|</span>
+    <span class="status-magenta">LOC: MANILA_PH</span>
+  </div>
+  <div class="copyright-text">
+    &copy; 2026 CJ_MANGASEP // CORE_v2.6
+  </div>
+</div>
+
+</body>
+</html>
