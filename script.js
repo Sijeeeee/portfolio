@@ -221,6 +221,15 @@ const projects = [
     langColor: "#f1e05a",
     tag1: "★ HTML5",
     tag2: "⑂ CSS Grid"
+  },
+  {
+    title: "love-letter",
+    desc: "An interactive and personalized digital love letter website created to turn a traditional letter into an immersive web experience. The project features a multi-page letter, animated transitions, interactive envelope elements, photo collages, decorative effects, and custom typography. Built with HTML, CSS, and JavaScript, the website focuses on creating a polished and responsive interface while incorporating interactive elements and custom animations. It allowed me to explore front-end development, DOM manipulation, responsive design, and CSS animations while turning a personal concept into a complete interactive website.",
+    image: "projects-section/letter.jpg",
+    lang: "HTML, CSS, JavaScript",
+    langColor: "#9830dd",
+    tag1: "★ HTML5",
+    tag2: "⑂ CSS Grid"
   }
 ];
 
